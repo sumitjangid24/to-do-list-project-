@@ -1,0 +1,167 @@
+<sty > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #121212;
+
+  font-family: Arial, sans-serif;
+
+  color: #ffffff;
+}
+
+/* Main Card */
+
+.card {
+  width: 400px;
+
+  background-color: #1e1e1e;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  border: 1px solid #333;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+
+h2 {
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+/* Input Area */
+
+.input-area {
+  display: flex;
+
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+
+  height: 40px;
+
+  padding: 0 12px;
+
+  background-color: #2a2a2a;
+
+  color: white;
+
+  border: 1px solid #444;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  border-color: #777;
+}
+
+/* Add Button */
+
+.add-btn {
+  padding: 0 15px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #ffffff;
+
+  color: #111;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #dddddd;
+}
+
+/* Task List */
+
+.task-list {
+  margin-top: 20px;
+
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 11px 12px;
+
+  margin-bottom: 8px;
+
+  background-color: #292929;
+
+  border: 1px solid #3a3a3a;
+
+  border-radius: 6px;
+
+  color: #eeeeee;
+}
+
+/* Delete Button */
+
+.delete-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #ff5c5c;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ff2e2e;
+}
+
+/* Empty Message */
+
+.task-list:empty::before {
+  content: "No tasks added yet";
+
+  display: block;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 14px;
+
+  padding: 10px;
+}
